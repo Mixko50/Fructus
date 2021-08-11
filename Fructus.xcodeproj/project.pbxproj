@@ -19,6 +19,7 @@
 		B48FDD6726C42537006AFB1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B48FDD6926C42539006AFB1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48FDD6C26C42539006AFB1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B48FDD7326C4256E006AFB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,9 @@
 		B48FDD6426C42537006AFB1A /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				B48FDD6526C42537006AFB1A /* FructusApp.swift */,
-				B48FDD6726C42537006AFB1A /* ContentView.swift */,
+				B48FDD7526C42AC9006AFB1A /* View */,
+				B48FDD7326C4256E006AFB1A /* Info.plist */,
+				B48FDD7426C42A6A006AFB1A /* App */,
 				B48FDD6926C42539006AFB1A /* Assets.xcassets */,
 				B48FDD6B26C42539006AFB1A /* Preview Content */,
 			);
@@ -65,6 +67,22 @@
 				B48FDD6C26C42539006AFB1A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B48FDD7426C42A6A006AFB1A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B48FDD6526C42537006AFB1A /* FructusApp.swift */,
+				B48FDD6726C42537006AFB1A /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B48FDD7526C42AC9006AFB1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +290,14 @@
 				DEVELOPMENT_TEAM = 9URMRRAERW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fructus/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Fructus;
+				INFOPLIST_KEY_CFBundleName = Fructus;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -302,9 +325,14 @@
 				DEVELOPMENT_TEAM = 9URMRRAERW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fructus/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Fructus;
+				INFOPLIST_KEY_CFBundleName = Fructus;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
