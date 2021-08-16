@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B401C52326CAAAD200107598 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401C52226CAAAD200107598 /* FruitRowView.swift */; };
 		B4142C4F26C581C00099FAEF /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4142C4E26C581C00099FAEF /* StartButtonView.swift */; };
 		B4142C5126C5903C0099FAEF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4142C5026C5903C0099FAEF /* OnboardingView.swift */; };
 		B416B56A26C457D300FCEF3A /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416B56926C457D300FCEF3A /* FruitCardView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B401C52226CAAAD200107598 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		B4142C4E26C581C00099FAEF /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		B4142C5026C5903C0099FAEF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B416B56926C457D300FCEF3A /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				B416B56926C457D300FCEF3A /* FruitCardView.swift */,
 				B4142C4E26C581C00099FAEF /* StartButtonView.swift */,
+				B401C52226CAAAD200107598 /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				B4F5283826C7B70300B8F5B8 /* FruitData.swift in Sources */,
 				B416B56A26C457D300FCEF3A /* FruitCardView.swift in Sources */,
+				B401C52326CAAAD200107598 /* FruitRowView.swift in Sources */,
 				B4142C4F26C581C00099FAEF /* StartButtonView.swift in Sources */,
 				B48FDD6826C42537006AFB1A /* ContentView.swift in Sources */,
 				B4142C5126C5903C0099FAEF /* OnboardingView.swift in Sources */,

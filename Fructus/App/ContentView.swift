@@ -7,35 +7,17 @@
 
 import SwiftUI
 
-extension Image {
-    func imageModifier() -> some View {
-        self
-            .resizable()
-            .scaledToFit()
-            .frame(maxWidth: 128)
-    }
-    func iconModifier() -> some View {
-        self
-            .imageModifier()
-            .foregroundColor(.pink)
-            .opacity(0.5)
-    }
-}
-
 struct ContentView: View {
-    private let imageURL: String = "https://image.flaticon.com/icons/png/512/1625/1625099.png"
+    var fruit: [Fruit] = fruitData
     var body: some View {
-        AsyncImage(url: URL(string: imageURL)) { phase in
-            switch phase {
-            case .success(_) :
-                OnboardingView()
-            case .empty:
-                Image(systemName: "heart.fill").iconModifier()
-            case .failure(_):
-                Image(systemName: "circle.folder.fill").iconModifier()
-            @unknown default:
-                ProgressView()
+        NavigationView {
+            List {
+                ForEach(fruit.shuffled()) { item in
+                    FruitRowView(fruit: item)
+                        .padding(.vertical, 5)
+                }
             }
+            .navigationTitle("Fruits")
         }
     }
 }
