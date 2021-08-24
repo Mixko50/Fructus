@@ -25,7 +25,7 @@ extension Image {
 @main
 struct FructusApp: App {
     private let imageURL: String = "https://image.flaticon.com/icons/png/512/1625/1625099.png"
-    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     
     var body: some Scene {
         WindowGroup {
