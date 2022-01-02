@@ -21,6 +21,7 @@
 		B48FDD6A26C42539006AFB1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48FDD6926C42539006AFB1A /* Assets.xcassets */; };
 		B48FDD6D26C42539006AFB1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48FDD6C26C42539006AFB1A /* Preview Assets.xcassets */; };
 		B4B2353C26F2005C007A715F /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2353B26F2005C007A715F /* FruitNutrientsView.swift */; };
+		B4CD11E1272DAA9B00B65F71 /* SettingsRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD11E0272DAA9B00B65F71 /* SettingsRowsView.swift */; };
 		B4F5283526C7B5A900B8F5B8 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5283426C7B5A900B8F5B8 /* FruitModel.swift */; };
 		B4F5283826C7B70300B8F5B8 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5283726C7B70300B8F5B8 /* FruitData.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		B48FDD6C26C42539006AFB1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B48FDD7326C4256E006AFB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B4B2353B26F2005C007A715F /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
+		B4CD11E0272DAA9B00B65F71 /* SettingsRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowsView.swift; sourceTree = "<group>"; };
 		B4F5283426C7B5A900B8F5B8 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		B4F5283726C7B70300B8F5B8 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,11 +114,12 @@
 			children = (
 				B416B56926C457D300FCEF3A /* FruitCardView.swift */,
 				B4142C4E26C581C00099FAEF /* StartButtonView.swift */,
+				B42C73ED26D499C00064C488 /* SourceLinkView.swift */,
 				B401C52226CAAAD200107598 /* FruitRowView.swift */,
 				B42C73EB26D496E80064C488 /* FruitHeaderView.swift */,
-				B42C73ED26D499C00064C488 /* SourceLinkView.swift */,
 				B4B2353B26F2005C007A715F /* FruitNutrientsView.swift */,
 				B41BE864272B04FD008C3FAD /* SettingsLabelView.swift */,
+				B4CD11E0272DAA9B00B65F71 /* SettingsRowsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				B401C52326CAAAD200107598 /* FruitRowView.swift in Sources */,
 				B4B2353C26F2005C007A715F /* FruitNutrientsView.swift in Sources */,
 				B4142C4F26C581C00099FAEF /* StartButtonView.swift in Sources */,
+				B4CD11E1272DAA9B00B65F71 /* SettingsRowsView.swift in Sources */,
 				B42C73EA26D490390064C488 /* FruitDetailView.swift in Sources */,
 				B48FDD6826C42537006AFB1A /* ContentView.swift in Sources */,
 				B41BE861272AFF7A008C3FAD /* SettingView.swift in Sources */,
@@ -348,10 +352,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fructus/Preview Content\"";
-				DEVELOPMENT_TEAM = 9URMRRAERW;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fructus/Info.plist;
@@ -372,6 +377,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ml.mixko.Fructus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,10 +389,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fructus/Preview Content\"";
-				DEVELOPMENT_TEAM = 9URMRRAERW;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fructus/Info.plist;
@@ -407,6 +414,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ml.mixko.Fructus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

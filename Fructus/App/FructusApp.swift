@@ -29,22 +29,22 @@ struct FructusApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AsyncImage(url: URL(string: imageURL)) { phase in
-                switch phase {
-                case .success(_) :
+//            AsyncImage(url: URL(string: imageURL)) { phase in
+//                switch phase {
+//                case .success(_) :
                     if isOnboarding {
                         OnboardingView()
                     } else {
                         ContentView()
                     }
-                case .empty:
-                    Image(systemName: "heart.fill").iconModifier()
-                case .failure(_):
-                    Image(systemName: "circle.folder.fill").iconModifier()
-                @unknown default:
-                    ProgressView()
-                }
-            }
+//                case .empty:
+//                    Image(systemName: "heart.fill").iconModifier()
+//                case .failure(_):
+//                    Image(systemName: "circle.folder.fill").iconModifier()
+//                @unknown default:
+//                    ProgressView()
+//                }
+//            }
         }
     }
 }

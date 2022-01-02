@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     
     var body: some View {
         NavigationView {
@@ -30,8 +31,39 @@ struct SettingView: View {
                     }
                     //Section 2
                     
+                    GroupBox(label: SettingsLabelView(labelText: "Customization", labelImage: "painbrush")){
+                        Divider().padding(.vertical, 4)
+                        Text("If you wish, you can restart the application by toggle the switch")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .multilineTextAlignment(.leading)
+                        
+                        Toggle(isOn: $isOnboarding){
+                            if isOnboarding {
+                                Text("Restarted".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                            } else {
+                                Text("Restart".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.secondary)
+                            }
+                        }
+                        .padding()
+                        .background(
+                            Color(UIColor.tertiarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8)))
+                    }
+                    
                     //Section 3
-                    Text("Hello world")
+                    GroupBox(label: SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")) {
+                        
+                        SettingsRowsView(name: "Developer", content: "Mixko")
+                        SettingsRowsView(name: "Designer", content: "Mixko")
+                        SettingsRowsView(name: "Tester", linkLabel: "My website", linkDestination: "apod.mixkoap.com")
+                        SettingsRowsView(name: "Version", content: "1.0")
+                    }
+                   
                 }
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
                 .navigationBarItems(trailing: Button(action : {
